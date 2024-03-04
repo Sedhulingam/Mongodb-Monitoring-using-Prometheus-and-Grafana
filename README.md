@@ -33,7 +33,7 @@ Steps:
    
 
 
-# How to install prometheus in windows <ignore this>
+# How to install prometheus in windows (ignore this)
 Steps:
 1. Go to this website for download prometheus in windows https://prometheus.io/download/
 2. Extract in local Drive under program files
