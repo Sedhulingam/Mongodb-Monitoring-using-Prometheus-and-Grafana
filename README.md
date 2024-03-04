@@ -1,6 +1,12 @@
 # Mongodb-Monitoring-using-Prometheus-and-Grafana
+Let’s get started with monitoring MongoDB using Prometheus and the MongoDB Exporter.
 
 ## Prerequists
+Before we get started, make sure you have the following prerequisites:
+
+  1. A MongoDB instance running on your system or a remote server.
+  2. Prometheus is installed on your system or a remote server.
+  3. Grafana installed on your system or a remote server (optional).
 
 # How to install Mongodb in local machine
 Steps:
