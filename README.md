@@ -5,7 +5,7 @@ Let’s get started with monitoring MongoDB using Prometheus and the MongoDB Exp
 Before we get started, make sure you have the following prerequisites:
 
   1. A MongoDB instance running on your system or a remote server.
-  2. Prometheus is installed on your system or a remote server.
+  2. Prometheus is installed on your system or a remote server.<No need>
   3. Grafana installed on your system or a remote server (optional).
 
 # How to install Mongodb in local machine
@@ -25,7 +25,15 @@ Steps
 4. run the grafana-server.exe to host it in localhost:8080 for the grafana GUI
 
 
-# How to install prometheus in windows
+# You need to download the mongodb exporter
+Steps:
+1. Go to this github link and clone it in a particular directory say desktop "git clone https://github.com/JamesOsgood/mongodb-grafana.git"
+2. After that go to that folder mongodb-grafana in cmd and type npm install
+3. after that cut that folder and paste that in grafana plugin folder which is in program files
+   
+
+
+# How to install prometheus in windows <ignore this>
 Steps:
 1. Go to this website for download prometheus in windows https://prometheus.io/download/
 2. Extract in local Drive under program files
