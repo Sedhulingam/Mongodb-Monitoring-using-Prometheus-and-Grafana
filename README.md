@@ -24,4 +24,5 @@ Steps:
 1. Go to this website for download prometheus in windows https://prometheus.io/download/
 2. Extract in local Drive under program files
 3. Run this command in cmd " prometheus.exe --config.file prometheus.yml --web.listen-address ":9090" --storage.tsdb.path "data" " under   C:\Program Files\prometheus-     2.50.1.windows-amd64
-4. After successful installation run the localhost:9090 to see the prometheus ui   
+4. After successful installation run the localhost:9090 to see the prometheus ui
+5. Check this website for reference http://www.liferaysavvy.com/2021/07/prometheus-installation-on-windows.html
