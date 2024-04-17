@@ -1,0 +1,2 @@
+So Normally to connect with the mongodb Datasource you dont have access in local grafana
+You need to get the enterprise license to use the mongodb Datasource 
