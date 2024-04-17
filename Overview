@@ -1,0 +1,77 @@
+Overview:
+
+Grafana open-source software enables you to query, visualize, alert on, and explore your metrics, logs, and traces wherever they are stored. Grafana OSS provides you with tools to turn your time-series database (TSDB) data into insightful graphs and visualizations. The Grafana OSS plugin framework also enables you to connect other data sources like NoSQL/SQL databases, ticketing tools like Jira or ServiceNow, and CI/CD tooling like GitLab.
+
+Index
+Comparision of Grafana labs vs Grafana enterprise 
+How to Connect with Grafana
+MongoDB setup & Creating Visualization
+Time range filter setup
+
+
+
+
+Define the schema: Define the session and user_session (usr_sess) schemas in your MongoDB database (mydb here) to structure the data appropriately.
+Create the Datasource in Grafana: Create the MongoDB data source in grafana and connection would be established.
+Dashboard Import: To import our Atlas dashboard in Grafana then use the below attached JSON file.
+Goal
+Objective
+
+The primary objective of this task is to create a comprehensive dashboard in Grafana utilizing data from MongoDB. This includes defining schemas for session and user data, establishing connections with MongoDB as the data source, designing visualizations based on the provided schemas, and exporting the completed dashboard as a JSON file for future use by the team.
+
+Tasks performed
+Schema Definition
+
+Database name: mydb
+
+Table names: session , usr_sess
+
+Defining schemas for session and user data to structure the data appropriately for visualization in Grafana. The table names should be "session" for session schema and "usr_sess" for user schema in the db.
+
+Below snap is the reference for one of the record of that particular table (Table is session and usr_sess)
+
+Session Schema ↓                                                                                     
+
+                                    
+
+
+
+
+User schema ↓ 
+
+MongoDB Data Source Setup:
+
+Establishing a connection to MongoDB within Grafana and configuring the connection settings.
+
+Please go through this page for more information on MongoDB data source setup:  MongoDB setup & Creating Visualization
+
+Dashboard Design:
+
+To construct the Grafana dashboard, each visualization must be individually crafted by querying the MongoDB database. The querying process is restricted solely to employing "find" and "aggregate" operations within the query panel. Subsequently, these individual visualizations will be amalgamated to form a cohesive single dashboard interface.
+
+Below is the sample reference how we can create a visualization:
+
+To create the above visualization which tells how many sessions created then the query should be like this.
+
+Here you can see you need to create a mongo query to fetch the data from the dB and then we can create several types of visualization from those data.
+
+To switch between different visualizations, you have option to choose and see below snap for the reference.
+
+After you create multiple visualizations, you can combine them into a single dashboard.
+
+ Download the session and usr_sess sample data.
+
+ Download the Atlas Dashboard Json file
+
+You can download the provided JSON file and import it into your Grafana instance to utilize this pre-configured dashboard effortlessly.
+
+ Import & Export Dashboard 
+
+Please go through this link to know how to import and export the dashboard in Grafana: Import and Export Dashboard in Grafana
+
+ Sample snap of Atlas Dashboard
+
+
+
+
+
